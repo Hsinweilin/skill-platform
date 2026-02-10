@@ -8,6 +8,7 @@ function Badge({ category }: { category: string }) {
     leetcode: "bg-emerald-900 text-emerald-300",
     "agent-ideas": "bg-violet-900 text-violet-300",
     "app-ideas": "bg-amber-900 text-amber-300",
+    "mini-projects": "bg-rose-900 text-rose-300",
   };
   const label = CATEGORIES[category as keyof typeof CATEGORIES]?.label ?? category;
   return <span className={`text-xs px-2 py-0.5 rounded-full ${colors[category] ?? "bg-gray-700"}`}>{label}</span>;

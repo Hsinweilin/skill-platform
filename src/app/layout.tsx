@@ -17,6 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <a href="/category/leetcode" className="text-sm text-emerald-400 hover:underline">LeetCode</a>
             <a href="/category/agent-ideas" className="text-sm text-violet-400 hover:underline">Agent Ideas</a>
             <a href="/category/app-ideas" className="text-sm text-amber-400 hover:underline">App Ideas</a>
+            <a href="/category/mini-projects" className="text-sm text-rose-400 hover:underline">Mini Projects</a>
           </div>
         </nav>
         <main className="max-w-5xl mx-auto px-4 py-8">{children}</main>

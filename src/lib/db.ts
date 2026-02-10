@@ -14,7 +14,7 @@ export function getDb(): Database.Database {
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         title TEXT NOT NULL,
         content TEXT NOT NULL,
-        category TEXT NOT NULL CHECK(category IN ('cloud','leetcode','agent-ideas','app-ideas')),
+        category TEXT NOT NULL CHECK(category IN ('cloud','leetcode','agent-ideas','app-ideas','mini-projects')),
         created_at TEXT NOT NULL DEFAULT (datetime('now'))
       )
     `);
@@ -35,4 +35,5 @@ export const CATEGORIES = {
   leetcode: { label: "LeetCode Concepts", color: "emerald" },
   "agent-ideas": { label: "Agent Business Ideas", color: "violet" },
   "app-ideas": { label: "App Ideas", color: "amber" },
+  "mini-projects": { label: "Mini Projects", color: "rose" },
 } as const;
